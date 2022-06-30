@@ -1,0 +1,11 @@
+tasks:
+  Log Work Item:
+    robotTaskName: Log Work Item
+condaConfigFile: conda.yaml
+ignoreFiles:
+- .gitignore
+artifactsDir: output
+PATH:
+- .
+PYTHONPATH:
+- .
