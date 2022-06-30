@@ -4,7 +4,7 @@ Library     RPA.Robocorp.WorkItems
 
 *** Tasks ***
 Log Work Item
-    For Each Work Item    Log It
+    For Each Input Work Item    Log It
 
 
 *** Keywords ***
