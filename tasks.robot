@@ -1,5 +1,6 @@
 *** Settings ***
 Library     RPA.Robocorp.WorkItems
+Library    RPA.Excel.Files
 
 
 *** Tasks ***
@@ -15,4 +16,6 @@ Log It
     ${output_payload}=    Create Dictionary
     ...    Type=output
     ...    Content=${payload}
-    Create Output Work Item    variables=${output_payload}    save=True
+
+    Set Work Item Payload    ${output_payload}
+    Save Work Item
