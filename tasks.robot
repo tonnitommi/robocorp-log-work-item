@@ -16,9 +16,9 @@ Log It
     # Amend "Type" to work item payload and put the
     # old one under key "Content".
     ${output_payload}=    Create Dictionary
-    ...    Type=output
+    ...    Processed=yesyes
     ...    Content=${payload}
 
     # Replace the old work item payload and save.
-    Set Work Item Payload    ${output_payload}
-    Save Work Item
+    Create Output Work Item    variables=${output_payload}    save=True
+    Release Input Work Item    DONE
